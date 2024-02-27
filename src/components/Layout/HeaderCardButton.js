@@ -7,11 +7,11 @@ const HeaderCardButton = (props) => {
   const numberOfItems=cartCtx.items.reduce((currValue,item)=>{return currValue=currValue+item.amount},0);
   return (
     <button className={classes.button} onClick={props.onClick} >
-        <span className={classes.icon}><CartIcon/></span>
+        <span className={classes.icon}><CartIcon /></span>
         <span>Your Cart </span>
         <span className={classes.badge}>{numberOfItems}</span>
       </button>
   )
 }
 
-export default HeaderCardButton;
+export default HeaderCardButton
